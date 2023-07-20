@@ -324,9 +324,30 @@ body {
     background-position: right 12px center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    display: block;
 }
 .dropdown-toggle-button:hover {
     background-color: var(--gray-100);
+}
+.dropdown-select {
+    max-width: 160px;
+    width: 100%;
+}
+.dropdown-select .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dropdown-select .dropdown-toggle-button {
+    border: 1px solid var(--gray-200);
+    background-color: var(--white);
+    padding: 8px 16px;
+    padding-right: 32px;
+}
+.dropdown-select .dropdown-toggle-button:hover {
+    background-color: var(--white);
+    border-color: var(--gray-300);
 }
 .dropdown-toggle > img {
     width: 100%;
@@ -350,15 +371,19 @@ body {
     list-style-type: none;
     margin: 4px 0;
 }
-.dropdown-menu > li > a {
+.dropdown-menu > li > * {
     white-space: nowrap;
     display: flex;
     align-items: center;
+    width: 100%;
     padding: 12px 16px;
     text-decoration: none;
     color: var(--gray-900);
+    background-color: transparent;
+    outline: transparent;
+    border: none;
 }
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > :hover {
     background-color: var(--gray-100);
 }
 /* end: Dropdown */
@@ -392,6 +417,11 @@ body {
 }
 .form-control:focus {
     border-color: var(--gray-400);
+}
+.dropdown-select-option[data-selected]:hover,
+.dropdown-select-option[data-selected] {
+    background-color: var(--blue-600);
+    color: var(--white);
 }
 /* end: Form */
 
@@ -443,36 +473,3 @@ body {
     background-color: var(--gray-100);
 }
 /* end: Button */
-
-
-
-/* start: Card */
-.card {
-    background-color: var(--white);
-    border-radius: 8px;
-    border: 1px solid var(--gray-200);
-    overflow: hidden;
-    margin-bottom: 24px;
-}
-.card-header {
-    padding: 12px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card-title {
-    font-size: 17px;
-}
-.card-header-link {
-    margin-left: 8px;
-    display: flex;
-}
-/* end: Card */
-
-
-
-/* start: Table */
-.table-responsive {
-    overflow-x: auto;
-}
-/* end: Table */

@@ -3,8 +3,19 @@
     padding: 48px 0;
 }
 .main-top {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     text-align: right;
+}
+.main-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-top-search-form {
+    margin-top: 16px;
+}
+.main-top-search-form .form-control {
+    background-color: var(--gray-200);
 }
 .main-table {
     width: 100%;
@@ -25,7 +36,7 @@
     font-weight: 700;
 }
 .main-table th {
-    padding: 12px 24px;
+    padding: 16px 24px;
 }
 .main-table td {
     font-size: 14px;

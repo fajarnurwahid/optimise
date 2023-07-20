@@ -80,3 +80,39 @@ function hideDropdown(popperInstance, dropdown) {
     });
 }
 // end: Popper
+
+
+
+// start: Form
+document.addEventListener('click', function (e) {
+    if(e.target.matches('.dropdown-select-option, .dropdown-select-option *')) {
+        var option = e.target.closest('.dropdown-select-option')
+        var select = e.target.closest('.dropdown-select')
+        if(select) {
+            var options = select.querySelectorAll('.dropdown-select-option')
+            var toggle = select.querySelector('.dropdown-toggle')
+            var input = select.querySelector('input')
+            if(input) {
+                var value = option.dataset.value
+                if(value !== undefined) {
+                    input.value = value
+                    toggle.textContent = option.textContent
+                    options.forEach(function(item) {
+                        if(item === option) {
+                            item.setAttribute('data-selected', '')
+                        } else {
+                            item.removeAttribute('data-selected')
+                        }
+                    })
+                }
+            }
+        }
+        document.querySelectorAll('.dropdown.active').forEach(function (item) {
+            var key = item.dataset.popperKey
+            if (key) {
+                hideDropdown(popperList[key], item)
+            }
+        })
+    }
+})
+// end: Form
