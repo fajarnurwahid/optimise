@@ -208,6 +208,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.card-title-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.card-icon {
+    margin-right: 12px;
+    font-size: 20px;
+    color: var(--gray-500);
+}
 .card-title {
     font-size: 17px;
 }
@@ -230,6 +240,27 @@ nav {
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 700;
+}
+.card-body {
+    padding: 16px 24px;
+}
+.card-body-header {
+    display: flex;  
+}
+.card-body-header-icon {
+    margin-right: 16px;
+    font-size: 18px;
+}
+.card-body-header-description {
+    color: var(--gray-400);
+    font-size: 13px;
+}
+.card-sub-body {
+    padding-left: 32px;
+}
+.card-footer {
+    padding: 8px 24px;
+    border-top: 1px solid var(--gray-200);
 }
 /* end: Card */
 
@@ -262,6 +293,18 @@ nav {
         padding: 8px 16px 0;
         border-top: 1px solid var(--gray-200);
         margin-top: 8px;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .main-banner-image {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .card-sub-body {
+        padding-left: 0;
     }
 }
 /* start: Breakpoints */

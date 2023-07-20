@@ -50,6 +50,13 @@ document.addEventListener('click', function (e) {
                 hideDropdown(popperList[key], item)
             }
         })
+    } else if(e.target.matches('.dropdown-menu > li *')) {
+        document.querySelectorAll('.dropdown.active').forEach(function (item) {
+            var key = item.dataset.popperKey
+            if (key) {
+                hideDropdown(popperList[key], item)
+            }
+        })
     }
 })
 
@@ -80,6 +87,36 @@ function hideDropdown(popperInstance, dropdown) {
     });
 }
 // end: Popper
+
+
+
+// start: Modal
+document.addEventListener('click', function(e) {
+    if(e.target.matches('[data-toggle="modal"], [data-toggle="modal"] *')) {
+        var el = e.target.closest('[data-toggle="modal"]')
+        var target = document.querySelector(el.dataset.target)
+        if(target) {
+            e.preventDefault()
+            target.classList.add('show')
+            preventScrollHtml()
+        }
+    } else if(e.target.matches('.modal-close, .modal-close *, .modal')) {
+        var modal = e.target.closest('.modal')
+        if(modal) {
+            modal.classList.remove('show')
+            unpreventScrollHtml()
+        }
+    }
+})
+
+function preventScrollHtml() {
+    document.querySelector('html').classList.add('overflow-hidden')
+}
+
+function unpreventScrollHtml() {
+    document.querySelector('html').classList.remove('overflow-hidden')
+}
+// end: Modal
 
 
 

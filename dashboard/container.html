@@ -168,7 +168,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-blue btn-sm">Create Account</a>
+                    <a href="#" class="btn btn-blue btn-sm" data-toggle="modal" data-target="#create-experience">Create Experience</a>
                 </div>
                 <form action="" class="main-top-search-form">
                     <div class="form-group-icon">
@@ -303,6 +303,103 @@
         </div>
     </section>
     <!-- end: Main -->
+
+    <!-- start: Side modal -->
+    <div class="modal modal-side modal-side-right" id="create-experience">
+        <div class="modal-inner">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Create experience</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm">Create</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-4">
+                            <label for="name" class="form-label mb-2">Name</label>
+                            <input type="text" id="name" class="form-control form-control-lg">
+                        </div>
+                        <div class="mb-4">
+                            <label for="url" class="form-label mb-2">URL</label>
+                            <input type="url" id="url" class="form-control form-control-lg">
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label mb-2">What type of experience would you like to create?</label>
+                            <div class="container-radio">
+                                <div class="container-radio-box">
+                                    <input name="type" type="radio" id="cn-1">
+                                    <label for="cn-1" class="container-radio-item">
+                                        <div class="container-radio-item-icon">
+                                            <i class="ri-archive-drawer-line"></i>
+                                        </div>
+                                        <div>
+                                            <div class="container-radio-item-title">A/B test</div>
+                                            <p class="container-radio-item-description">Tests two or more variants of a page. Also called an A/B/n test. <a href="#">Learn more</a></p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="container-radio-box">
+                                    <input name="type" type="radio" id="cn-2">
+                                    <label for="cn-2" class="container-radio-item">
+                                        <div class="container-radio-item-icon">
+                                            <i class="ri-archive-drawer-line"></i>
+                                        </div>
+                                        <div>
+                                            <div class="container-radio-item-title">A/B test</div>
+                                            <p class="container-radio-item-description">Tests two or more variants of a page. Also called an A/B/n test. <a href="#">Learn more</a></p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="container-radio-box">
+                                    <input name="type" type="radio" id="cn-3">
+                                    <label for="cn-3" class="container-radio-item">
+                                        <div class="container-radio-item-icon">
+                                            <i class="ri-archive-drawer-line"></i>
+                                        </div>
+                                        <div>
+                                            <div class="container-radio-item-title">A/B test</div>
+                                            <p class="container-radio-item-description">Tests two or more variants of a page. Also called an A/B/n test. <a href="#">Learn more</a></p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-radio">
+                                <div class="container-radio-box">
+                                    <input name="type" type="radio" id="cn-4">
+                                    <label for="cn-4" class="container-radio-item">
+                                        <div class="container-radio-item-icon">
+                                            <i class="ri-archive-drawer-line"></i>
+                                        </div>
+                                        <div>
+                                            <div class="container-radio-item-title">A/B test</div>
+                                            <p class="container-radio-item-description">Tests two or more variants of a page. Also called an A/B/n test. <a href="#">Learn more</a></p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-radio">
+                                <div class="container-radio-box">
+                                    <input name="type" type="radio" id="cn-5">
+                                    <label for="cn-5" class="container-radio-item">
+                                        <div class="container-radio-item-icon">
+                                            <i class="ri-archive-drawer-line"></i>
+                                        </div>
+                                        <div>
+                                            <div class="container-radio-item-title">A/B test</div>
+                                            <p class="container-radio-item-description">Tests two or more variants of a page. Also called an A/B/n test. <a href="#">Learn more</a></p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start: Side modal -->
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="../js/global.js"></script>

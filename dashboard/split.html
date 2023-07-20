@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/dashboard/header-footer.css">
+    <link rel="stylesheet" href="../css/dashboard/split.css">
+    <title>Optimize</title>
+</head>
+<body>
+
+    <!-- start: Svg -->
+    <svg style="display: none; height: 0; width: 0;">
+        <symbol id="banner" viewBox="0 0 132 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false"> <defs> <polygon points="131.989748 22.7117026 12.8531262 0.0812972973 0.0358834951 100.167351 61.9075728 111.920432 120.965398 111.920432 131.990175 22.7117838 131.989748 112 0 112 0 0.0812972973 131.989748 0.0812972973"></polygon> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-361.000000, -368.000000)"> <g transform="translate(361.000000, 368.000000)"> <g> <polygon fill="#34A853" points="12.8217241 0 0 100.229968 61.8933219 112 120.971796 112 132 22.6626918 12.8238608 0"></polygon> <g> <mask fill="white"> <use xlink:href="#path-1"></use> </mask> <g></g> <polygon mask="url(#mask-2)" points="120.965398 111.920432 131.990175 22.7117838 12.8531262 0.0812972973 0.0358834951 100.167351 61.9075728 111.920432"></polygon> </g> <polygon fill="#E1E2E6" points="0 112 120.645161 112 120.645161 15.7948718 0 15.7948718"></polygon> <polygon stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round" points="9.93548387 100.512821 56.7741935 100.512821 56.7741935 58.8717949 9.93548387 58.8717949"></polygon> <polygon stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round" points="9.93548387 45.9487179 112.129032 45.9487179 112.129032 28.7179487 9.93548387 28.7179487"></polygon> <path d="M65.2903226,57.4358974 L107.870968,57.4358974" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M65.2903226,66.0512821 L107.870968,66.0512821" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M65.2903226,74.6666667 L107.870968,74.6666667" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M65.2903226,83.2820513 L107.870968,83.2820513" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M65.2903226,90.4615385 L107.870968,90.4615385" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M65.2903226,99.0769231 L107.870968,99.0769231" stroke="#FFFFFF" stroke-width="2.88641254" stroke-linecap="round" stroke-linejoin="round"></path> </g> <g transform="translate(44.000000, 88.000000)"> <polygon fill="#2A2C33" points="0 0.00012962963 0 34.9469815 8.78655556 22.9095741 21.9661852 24.462537"></polygon> <path d="M8.78655556,22.9095309 L12.9967037,33.9760123" stroke="#2A2C33" stroke-width="4.22761728" stroke-linecap="round" stroke-linejoin="round"></path> </g> <g transform="translate(43.500000, 75.000000) rotate(-5.000000) translate(-43.500000, -75.000000) translate(25.000000, 70.000000)" stroke="#FBBC04" stroke-linecap="round" stroke-width="2.96999999"> <path d="M18.8490566,7.32592464 L18.8490566,0"></path> <path d="M32.1132075,9.98989724 L37,5.32794519"></path> <path d="M4.88679245,9.98989724 L0,5.32794519"></path> </g> </g> </g> </g> </symbol>
+    </svg>
+    <!-- end: Svg -->
+    
+    <!-- start: Navbar -->
+    <nav>
+        <div class="navbar-wrapper">
+            <div class="navbar-nav">
+                <a href="#" class="navbar-back">
+                    <i class="ri-arrow-left-line"></i>
+                </a>
+                <a href="#" class="navbar-logo">
+                    <img src="https://placehold.co/200x48" alt="">
+                </a>
+            </div>
+            <div class="navbar-divider"></div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-left">
+                    <div class="dropdown">
+                        <button type="button" class="dropdown-toggle dropdown-toggle-button navbar-account-dropdown">
+                            <span class="navbar-account-breadcrumb">
+                                <span>All accounts</span>
+                                <span>My account</span>
+                            </span>
+                            <span>All accounts</span>
+                        </button>
+                        <div class="dropdown-body navbar-account-body">
+                            <div class="navbar-account-top">
+                                <form action="" class="navbar-account-form">
+                                    <div class="form-group-icon">
+                                        <i class="ri-search-line form-icon"></i>
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </form>
+                                <a href="#" class="btn btn-sm btn-white">Visit Platform Home</a>
+                            </div>
+                            <div class="navbar-account-tab">
+                                <button type="button" class="active">All</button>
+                                <button type="button">Favourite</button>
+                                <button type="button">Recent</button>
+                            </div>
+                            <div class="navbar-account-tab-wrapper">
+                                <div class="navbar-account-tab-item">
+                                    <table class="navbar-account-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Account</th>
+                                                <th>Containers</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <ul class="navbar-account-list">
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <span class="navbar-account-item-title">My Account</span>
+                                                                    <span class="navbar-account-item-id">2654365345</span>
+                                                                </span>
+                                                                <i class="ri-arrow-right-s-line"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <span class="navbar-account-item-title">My Account</span>
+                                                                    <span class="navbar-account-item-id">2654365345</span>
+                                                                </span>
+                                                                <i class="ri-arrow-right-s-line"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul class="navbar-account-container">
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>
+                                                                    <span class="navbar-account-item-title">My Account</span>
+                                                                    <span class="navbar-account-item-id">2654365345</span>
+                                                                </span>
+                                                                <i class="ri-star-line"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-menu-right">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle"><i class="ri-more-2-fill"></i></button>
+                        <div class="dropdown-body">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">User Setting</a>
+                                </li>
+                                <li>
+                                    <a href="#">User Forum</a>
+                                </li>
+                                <li>
+                                    <a href="#">Send Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <img src="https://placehold.co/36x36" alt="">
+                        </button>
+                        <div class="dropdown-body">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">User Setting</a>
+                                </li>
+                                <li>
+                                    <a href="#">User Setting</a>
+                                </li>
+                                <li>
+                                    <a href="#">User Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end: Navbar -->
+
+    <!-- start: Main -->
+    <section class="main-section">
+        <div class="container">
+            <div class="alert alert-dark mb-8">
+                <div class="alert-icon">
+                    <i class="ri-error-warning-line"></i>
+                </div>
+                <div class="alert-body">
+                    <p><span class="mr-1 font-bold">Draft.</span> Some setup steps must still be completed.</p>
+                </div>
+                <div class="alert-right">
+                    <button type="button" class="btn btn-white btn-sm"><i class="ri-play-line mr-1"></i>Start</button>
+                    <div class="dropdown ml-2">
+                        <button class="dropdown-toggle dropdown-toggle-white"><i class="ri-more-2-fill"></i></button>
+                        <div class="dropdown-body">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">User Setting</a>
+                                </li>
+                                <li>
+                                    <a href="#">User Forum</a>
+                                </li>
+                                <li>
+                                    <a href="#">Send Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-breadcrumb mb-4">
+                <a href="#">
+                    <div class="main-breadcrumb-icon">
+                        <i class="ri-window-line"></i>
+                    </div>
+                    <div>
+                        <div class="main-breadcrumb-title">Create Variants</div>
+                        <p class="main-breadcrumb-description">Customise your site</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main-breadcrumb-icon">
+                        <i class="ri-window-line"></i>
+                    </div>
+                    <div>
+                        <div class="main-breadcrumb-title">Create Variants</div>
+                        <p class="main-breadcrumb-description">Customise your site</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main-breadcrumb-icon">
+                        <i class="ri-window-line"></i>
+                    </div>
+                    <div>
+                        <div class="main-breadcrumb-title">Create Variants</div>
+                        <p class="main-breadcrumb-description">Customise your site</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main-breadcrumb-icon">
+                        <i class="ri-window-line"></i>
+                    </div>
+                    <div>
+                        <div class="main-breadcrumb-title">Create Variants</div>
+                        <p class="main-breadcrumb-description">Customise your site</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrapper">
+                        <div class="card-icon"><i class="ri-focus-2-line"></i></div>
+                        <h2 class="card-title">Targeting and variants</h2>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="main-wrapper">
+                        <div class="main-banner-image">
+                            <svg>
+                                <use xlink:href="#banner"></use>
+                            </svg>
+                        </div>
+                        <div class="main-banner-content">
+                            <h1 class="main-banner-title mb-1">Get started by creating a variant of your site to test.</h1>
+                            <a href="#" class="link-blue text-sm"><i class="ri-question-line"></i> Learn more</a>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-blue btn-sm" data-toggle="modal" data-target="#add-variant">Add Variant</a>
+                            </div>
+                            <p class="main-banner-description mt-3">Or, start by adding <a href="#" class="link-gray">audience targeting rules</a> instead.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-light btn-sm" data-toggle="modal" data-target="#editor-page">Editor page: https://rightbiz.co.uk/ <i class="ri-pencil-line ml-1"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrapper">
+                        <div class="card-icon"><i class="ri-file-list-line"></i></div>
+                        <h2 class="card-title">Description</h2>
+                    </div>
+                    <div class="card-header-link">
+                        <a href="#" class="btn btn-icon btn-light" data-toggle="modal" data-target="#edit-description"><i class="ri-pencil-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrapper">
+                        <div class="card-icon"><i class="ri-cursor-line"></i></div>
+                        <h2 class="card-title">Measurement and objectives</h2>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-header mb-4">
+                        <div class="card-body-header-icon"><i class="ri-bar-chart-line"></i></div>
+                        <div>
+                            <div class="mb-1">Goals</div>
+                            <p class="card-body-header-description">The website functionality you wish to optimize. <a href="#" class="link-gray">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="card-sub-body">
+                        <ul class="goal-added-list">
+                            <li>
+                                <div class="goal-added-item-icon">
+                                    <i class="ri-eye-2-line"></i>
+                                </div>
+                                <div>
+                                    <div class="mb-1">Pageviews <span class="badge badge-blue ml-1">Primary</span></div>
+                                    <p class="goal-added-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle"><i class="ri-more-2-fill"></i></button>
+                                        <div class="dropdown-body">
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goal-added-item-icon">
+                                    <i class="ri-eye-2-line"></i>
+                                </div>
+                                <div>
+                                    <div class="mb-1">Pageviews</div>
+                                    <p class="goal-added-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle"><i class="ri-more-2-fill"></i></button>
+                                        <div class="dropdown-body">
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle btn btn-white btn-sm"><i class="ri-add-line mr-1"></i> Add goal</button>
+                            <div class="dropdown-body">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#add-goal">Choose from list</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Custom</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrapper">
+                        <div class="card-icon"><i class="ri-group-line"></i></div>
+                        <h2 class="card-title">Audience</h2>
+                    </div>
+                    <div class="card-header-link">
+                        <button type="button" class="btn btn-white btn-sm" data-toggle="modal" data-target="#add-audience"><i class="ri-add-line mr-1"></i> New audience</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="table-responsive">
+                        <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <th>Container name</th>
+                                    <th>Running</th>
+                                    <th>Total</th>
+                                    <th>Container ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">My Container</a></td>
+                                    <td><a href="#">3</a></td>
+                                    <td><a href="#">246</a></td>
+                                    <td><a href="#">OPT-HFWSD8234</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">My Container</a></td>
+                                    <td><a href="#">3</a></td>
+                                    <td><a href="#">246</a></td>
+                                    <td><a href="#">OPT-HFWSD8234</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">My Container</a></td>
+                                    <td><a href="#">3</a></td>
+                                    <td><a href="#">246</a></td>
+                                    <td><a href="#">OPT-HFWSD8234</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Main -->
+
+    <!-- start: Side modal -->
+    <div class="modal modal-side modal-side-right modal-lg" id="add-variant">
+        <div class="modal-inner">
+            <div class="modal-dialog bg-gray">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Add variant</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm" disabled>Done</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Variant details</h2>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="mb-4">
+                                    <label for="name" class="form-label mb-2">Variant name</label>
+                                    <input type="text" class="form-control form-control-lg" id="name">
+                                </div>
+                                <div>
+                                    <label for="" class="form-label mb-4">Redirect type</label>
+                                    <div class="mb-4 form-group-toggle">
+                                        <div class="form-flex">
+                                            <input type="radio" class="form-radio" data-toggle="form" name="redirect" id="single">
+                                            <label for="single">Redirect to a single page</label>
+                                        </div>
+                                        <div class="pl-7 mt-3 form-hidden">
+                                            <form action="">
+                                                <div>
+                                                    <label for="url" class="form-label mb-2">Redirect URL</label>
+                                                    <input type="url" class="form-control form-control-lg">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-toggle">
+                                        <div class="form-flex">
+                                            <input type="radio" class="form-radio" data-toggle="form" name="redirect" id="advance">
+                                            <label for="advance">Advance redirect</label>
+                                        </div>
+                                        <div class="pl-7 mt-3 form-hidden">
+                                            <form action="">
+                                                <div>
+                                                    <label for="url" class="form-label mb-2">Redirect URL</label>
+                                                    <input type="url" class="form-control form-control-lg">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-side modal-side-right" id="editor-page">
+        <div class="modal-inner">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Edit editor page</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm" disabled>Done</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-4">
+                            <label for="url" class="form-label mb-2">Page URL</label>
+                            <input type="text" id="url" class="form-control form-control-lg">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-side modal-side-right" id="edit-description">
+        <div class="modal-inner">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Edit experience description</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm" disabled>Done</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-4">
+                            <label for="url" class="form-label mb-2">Description</label>
+                            <input type="text" id="url" class="form-control form-control-lg">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-side modal-side-right" id="add-goal">
+        <div class="modal-inner">
+            <div class="modal-dialog bg-gray">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Add goal</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm" disabled>Done</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Visit a specific page</span>
+                                    <span class="list-item-description">Is triggered when a visitor goes to a certain page</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Visit a specific page</span>
+                                    <span class="list-item-description">Is triggered when a visitor goes to a certain page</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Visit a specific page</span>
+                                    <span class="list-item-description">Is triggered when a visitor goes to a certain page</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-side modal-side-right" id="add-audience">
+        <div class="modal-inner">
+            <div class="modal-dialog bg-gray">
+                <div class="modal-header">
+                    <button type="button" class="modal-close">&times;</button>
+                    <div class="modal-header-title">Add audience</div>
+                    <div class="modal-header-right">
+                        <button type="button" class="btn btn-blue btn-sm" disabled>Done</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Google Traffic</span>
+                                    <span class="list-item-description">Lorem ipsum dolor sit amet consectetur.</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Bing Traffic</span>
+                                    <span class="list-item-description">Lorem ipsum dolor sit amet consectetur.</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="list-item-icon">
+                                    <i class="ri-checkbox-blank-circle-line"></i>
+                                </span>
+                                <span>
+                                    <span class="list-item-title">Yahoo Traffic</span>
+                                    <span class="list-item-description">Lorem ipsum dolor sit amet consectetur.</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start: Side modal -->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/dashboard/split.js"></script>
+</body>
+</html>
