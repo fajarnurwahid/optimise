@@ -1,0 +1,216 @@
+/* start: Global */
+body {
+    background-color: var(--gray-100);
+}
+/* end: Global */
+
+
+
+/* start: Navbar */
+nav {
+    padding: 8px 16px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.navbar-logo {
+    flex-shrink: 0;
+}
+.navbar-logo > img {
+    height: 48px;
+}
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+}
+.navbar-divider {
+    width: 0;
+    height: 32px;
+    border-left: 1px solid var(--gray-200);
+    margin: 0 16px;
+}
+.navbar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-account-body {
+    width: 720px;
+}
+.navbar-account-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--gray-200);
+}
+.navbar-account-form .form-control {
+    background-color: var(--gray-100);
+}
+.navbar-account-tab > * {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 14px;
+    color: var(--slate-600);
+}
+.navbar-account-tab > :hover {
+    color: var(--slate-900);
+}
+.navbar-account-tab > .active {
+    color: var(--blue-600);
+    position: relative;
+}
+.navbar-account-tab > .active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 0;
+    border-bottom: 3px solid var(--blue-500);
+}
+.navbar-account-table {
+    width: 100%;
+    border-top: 1px solid var(--slate-200);
+    border-collapse: collapse;
+}
+.navbar-account-table th {
+    text-align: left;
+    font-size: 14px;
+    color: var(--slate-400);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--slate-200);
+}
+.navbar-account-table th:not(:last-child),
+.navbar-account-table td:not(:last-child) {
+    border-right: 1px solid var(--slate-200);
+}
+.navbar-account-table td {
+    vertical-align: baseline;
+}
+.navbar-account-table th:first-child:hover,
+.navbar-account-table td:first-child:hover {
+    width: 100%;
+}
+.navbar-account-table th:last-child:hover,
+.navbar-account-table td:last-child:hover {
+    width: 100%;
+}
+.navbar-account-container,
+.navbar-account-list {
+    list-style-type: none;
+}
+.navbar-account-container  > li > a,
+.navbar-account-list > li > a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray-900);
+}
+.navbar-account-container  > li > a:hover,
+.navbar-account-list > li > a:hover {
+    background-color: var(--gray-50);
+}
+.navbar-account-container  > li > a > :first-child,
+.navbar-account-list > li > a > :first-child {
+    margin-right: 16px;
+}
+.navbar-account-container  > li.active > a,
+.navbar-account-list > li.active > a {
+    background-color: var(--gray-100);
+}
+.navbar-account-item-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+.navbar-account-item-id {
+    font-size: 14px;
+    color: var(--gray-600);
+}
+.navbar-menu-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-menu-right > :not(:last-child) {
+    margin-right: 8px;
+}
+/* end: Navbar */
+
+
+
+/* start: Main */
+.main-section {
+    padding: 48px 0;
+}
+.main-top {
+    margin-bottom: 24px;
+    text-align: right;
+}
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+}
+.main-table a {
+    text-decoration: none;
+    color: var(--gray-900);
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+}
+.main-table th {
+    border-bottom: 1px solid var(--gray-200);
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+}
+.main-table th {
+    padding: 12px 24px;
+}
+.main-table td {
+    font-size: 14px;
+}
+.main-table tr:not(:last-child) td {
+    border-bottom: 1px solid var(--gray-200);
+}
+.main-table tr:hover td {
+    background-color: var(--gray-50);
+}
+/* end: Main */
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 8px 0;
+    }
+    .navbar-wrapper {
+        flex-direction: column;
+    }
+    .navbar-divider {
+        display: none;
+    }
+    .navbar-logo {
+        padding: 0 16px;
+    }
+    .navbar-menu {
+        padding: 8px 16px 0;
+        border-top: 1px solid var(--gray-200);
+        margin-top: 8px;
+    }
+}
+/* start: Breakpoints */
